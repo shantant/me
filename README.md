@@ -3,7 +3,7 @@
 > 🚀 [Shantan Indonesia]
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Project Status](https://img.shields.io/badge/Status-New-brightgreen)](#[YOUR_STATUS_SECTION])
+[![Project Status](https://img.shields.io/badge/Status-NEW-brightgreen)](#[YOUR_STATUS_SECTION])
 
 ## 💡 About The Project
 
