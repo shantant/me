@@ -20,7 +20,7 @@ This project is built upon a duality of technology—a synthesis of low-level po
 | Component | Technology (Percentage) | Contribution and Philosophy |
 | :---: | :---: | :--- |
 | **🚀 CORE ENGINE** | **C (50%)** | **The Primary Pillar of Performance:** The C language was chosen as the computational heart of the project. Its dominant contribution ensures **raw speed**, **high-level memory efficiency**, and the capability to run core logic with minimal overhead. It is the engine driving everything. |
-| **🌐 PRESENTATION** | **HTML5 (17%)** | **Structural Framework:** Serves as the foundation for clean and semantic markup. It is used to construct the entire content structure of the user interface using modern standards. |
+| **🌐 PRESENTATION** | **HTML5 (19%)** | **Structural Framework:** Serves as the foundation for clean and semantic markup. It is used to construct the entire content structure of the user interface using modern standards. |
 | **💅 STYLING MODULE** | **SCSS/Sass (10%)** | **Elegant Style Architecture:** Employed for modularized and well-managed styling. SCSS allows the use of variables, nesting, and mixins to create a consistent, maintainable, and scalable design. |
 | **⚡ INTERACTIVITY** | **JavaScript (7%)** | **The Dynamic Layer:** Although its percentage is small, JavaScript is fully responsible for client-side interactivity. It is used to bring UI elements to life, process dynamic data, and deliver an intuitive user experience. |
 
