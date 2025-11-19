@@ -27,7 +27,7 @@ This project is built upon a duality of technology—a synthesis of low-level po
 
 ## 🏗 Architectural Philosophy
 
-We believe in a clear separation between **Processing Power (C)** and **User Experience (The Web Stack)**. This approach ensures that the project is not only **fast and efficient** behind the scenes but also **intuitive and responsive** in front of the user.
+My project adheres to a Front-End Centric Architecture focused on maximum front-end performance and maintainability built entirely upon the modern Web Stack. The core philosophy is Style-Driven Development, where CSS/SCSS (75%) serves as the dominant engineering pillar, ensuring a high-performance, responsive user interface through a modular, scalable design system implemented via SCSS variables and mixins. HTML5 provides a clean, semantic structure, while JavaScript (7%) is deliberately confined to a minimal role, functioning purely as an enhancement layer to deliver critical interactivity, thereby guaranteeing fast loading times and a highly optimized rendering pipeline. Crucially, this architecture demonstrates a mastery of modern web standards, code organization, and performance optimization, making it an ideal showcase piece for professional review and portfolio presentation.
 
 
 
