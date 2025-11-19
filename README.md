@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Project Status](https://img.shields.io/badge/Status-NEW-brightgreen)](#[YOUR_STATUS_SECTION])
 [![GitHub language count](https://img.shields.io/github/languages/count/shantant/me)](https://github.com/shantant/me)
-[![GitHub top language](https://img.shields.io/badge/Language%20Core-CSS-blue)](https://github.com/shantant/me)
+[![GitHub top language](https://img.shields.io/badge/Language%20Core-HTML+CSS-blue)](https://github.com/shantant/me)
 
 ## 💡 About The Project
 
