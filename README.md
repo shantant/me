@@ -20,7 +20,7 @@ This project is built upon a duality of technology—a synthesis of low-level po
 | Component | Technology | Contribution (%) | Philosophy |
 | :---: | :---: | :---: | :--- |
 | **💅 CORE STYLING** | **CSS** | 65% | **The Primary Pillar of Design:** CSS is the core styling engine. This dominant contribution ensures the visual presentation, **layout**, and **responsive behavior** of all elements, acting as the fundamental layer controlling the look and feel. |
-| **🌐 PRESENTATION** | **HTML5** | 19% | **Structural Framework:** Serves as the foundation for clean and semantic markup. It is used to construct the entire content structure of the user interface using modern standards. |
+| **🌐 PRESENTATION** | **HTML5** | 18% | **Structural Framework:** Serves as the foundation for clean and semantic markup. It is used to construct the entire content structure of the user interface using modern standards. |
 | **⚡ STYLE ARCHITECTURE** | **SCSS/Sass** | 10% | **Elegant Style Preprocessing:** Employed for modularized and well-managed styling. **SCSS** allows the use of variables, nesting, and mixins to create a consistent, maintainable, and scalable design architecture. |
 | **✨ INTERACTIVITY** | **JavaScript** | 7% | **The Dynamic Layer:** Although its percentage is small, **JavaScript** is fully responsible for client-side interactivity. It is used to bring UI elements to life, process dynamic data, and deliver an intuitive user experience. |
 
