@@ -50,5 +50,5 @@ This project would not be complete without the vibrant developer community and t
 
 ## ©️ License
 
-Distributed under the MIT License. See the included `LICENSE` file for more information.
+Published under the MIT License. See the included `LICENSE` file for more information.
 
