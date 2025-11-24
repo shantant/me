@@ -1,6 +1,9 @@
 # ✨ [Call me Satria..]
 
 > 🚀 [Shantan Indonesia]
+<p align="left">
+  <img src="https://komarev.com/ghpvc/?username=shantant&label=Profile%20views&color=000000&style=flat" alt="shantant" />
+</p>
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Project Status](https://img.shields.io/badge/Status-NEW-brightgreen)](#[YOUR_STATUS_SECTION])
