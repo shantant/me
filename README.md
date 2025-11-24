@@ -4,7 +4,6 @@
 <img src="https://readme-typing-svg.demolab.com/?lines=Page+of+Shantan+Indonesia!;Underground+Alert!;Check+my+website!;Hit+me+up!&font=Fira%20Code&center=false&width=380&height=50&duration=4000&pause=1000" alt="shantant">
 </p>
 
-
 <p align="left">
   <img src="https://komarev.com/ghpvc/?username=shantant&label=Profile%20views&color=000000&style=flat" alt="shantant" />
 </p>
