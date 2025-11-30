@@ -4,10 +4,6 @@
 <img src="https://readme-typing-svg.demolab.com/?lines=Page+of+Shantan+Indonesia!;Underground+Alert!;Check+my+website!;Thanks+for+visiting!&font=Fira%20Code&center=false&width=480&height=50&duration=4000&pause=1000" alt="shantant">
 </p>
 
-<p align="left">
-  <img src="https://komarev.com/ghpvc/?username=shantant&label=Profile%20views&color=000000&style=flat" alt="shantant" />
-</p>
-
 [![License](https://img.shields.io/badge/License-GPL-blue.svg)](https://opensource.org/licenses/MIT)
 [![Project Status](https://img.shields.io/badge/Status-Official-brightgreen)](#OFFICIAL)
 [![GitHub language count](https://img.shields.io/github/languages/count/shantant/me)](https://github.com/shantant/me)
