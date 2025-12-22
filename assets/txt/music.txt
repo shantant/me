@@ -1,0 +1,58 @@
+[
+    {
+        "songName": "Elegi Esok Pagi",
+        "artist": "Adera, Ebiet G Ade, Segara",
+        "files": {
+            "cover": "images/music/elegi.jpg",
+            "song": "music/elegiesokpagi.mp3"
+        }
+    },
+    {
+        "songName": "You'll be in my heart",
+        "artist": "NIKI",
+        "files": {
+            "cover": "images/music/bemyheart.jpg",
+            "song": "music/bemyheart.mp3"
+        }
+    },
+    {
+        "songName": "That's so true",
+        "artist": "Gracie Abrams",
+        "files": {
+            "cover": "images/music/sotrue.jpg",
+            "song": "music/sotrue.mp3"
+        }
+    },
+    {
+        "songName": "Belai",
+        "artist": "Bunga & Amsyar Lee",
+        "files": {
+            "cover": "images/music/belai.jpg",
+            "song": "music/belai.mp3"
+        }
+    },
+    {
+        "songName": "Replay",
+        "artist": "Iyaz",
+        "files": {
+            "cover": "images/music/replay.jpg",
+            "song": "music/replay.mp3"
+        }
+    },
+    {
+        "songName": "Ocean eyes",
+        "artist": "Billie Eilish",
+        "files": {
+            "cover": "images/music/oceaneyes.jpeg",
+            "song": "music/oceaneyes.mp3"
+        }
+    },
+    {
+        "songName": "Ngga dulu",
+        "artist": "Akbar, Zynakal, Ciloqciliq",
+        "files": {
+            "cover": "images/music/nggadulu.jpeg",
+            "song": "music/nggadulu.m4a"
+        }
+    }
+]

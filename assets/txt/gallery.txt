@@ -1,0 +1,252 @@
+[
+  {
+    "category": "city",
+    "alt": "City of Jakarta",
+    "src": "images/gallery/1.jpg"
+  },
+  {
+    "category": "sign",
+    "alt": "Arrow on Monas",
+    "src": "images/gallery/2.jpg"
+  },
+  {
+    "category": "food",
+    "alt": "Lotek",
+    "src": "images/gallery/3.jpg"
+  },
+  {
+    "category": "fashion",
+    "alt": "New Balance",
+    "src": "images/gallery/4.jpg"
+  },
+  {
+    "category": "food",
+    "alt": "Chicken",
+    "src": "images/gallery/5.jpg"
+  },
+  {
+    "category": "food",
+    "alt": "Soto Mie Bogor",
+    "src": "images/gallery/6.jpg"
+  },
+  {
+    "category": "Lamp",
+    "alt": "Camera Accessories",
+    "src": "images/gallery/7.jpg"
+  },
+  {
+    "category": "nature",
+    "alt": "Ant on the tree",
+    "src": "images/gallery/8.jpg"
+  },
+  {
+    "category": "Place",
+    "alt": "Yogyakarta International Airport",
+    "src": "images/gallery/9.jpg"
+  },
+  {
+    "category": "Place",
+    "alt": "Museum Sandi Yogyakarta",
+    "src": "images/gallery/10.jpg"
+  },
+  {
+    "category": "Vibes",
+    "alt": "Chiling",
+    "src": "images/gallery/11.jpg"
+  },
+  {
+    "category": "toy",
+    "alt": "Iron Man in action",
+    "src": "images/gallery/12.jpg"
+  },
+  {
+    "category": "food",
+    "alt": "Nasi Goreng on the train",
+    "src": "images/gallery/13.jpg"
+  },
+  {
+    "category": "nature",
+    "alt": "Nature of Merapi",
+    "src": "images/gallery/14.jpg"
+  },
+  {
+    "category": "food",
+    "alt": "Milk by KAI",
+    "src": "images/gallery/15.jpg"
+  },
+  {
+    "category": "food",
+    "alt": "Sei Sapi by KAI",
+    "src": "images/gallery/16.jpg"
+  },
+  {
+    "category": "place",
+    "alt": "Sono Budoyo",
+    "src": "images/gallery/17.jpg"
+  },
+  {
+    "category": "place",
+    "alt": "Mall of Indonesia",
+    "src": "images/gallery/18.jpg"
+  },
+  {
+    "category": "place",
+    "alt": "Cibinong City Mall",
+    "src": "images/gallery/19.jpg"
+  },
+  {
+    "category": "transportation",
+    "alt": "TAKSAKA part of KAI",
+    "src": "images/gallery/20.jpg"
+  },
+  {
+    "category": "place",
+    "alt": "Monumen Nasional",
+    "src": "images/gallery/21.jpg"
+  },
+  {
+    "category": "city",
+    "alt": "POV of Jakarta",
+    "src": "images/gallery/22.jpg"
+  },
+  {
+    "category": "thing",
+    "alt": "Minion Buds",
+    "src": "images/gallery/23.jpg"
+  },
+  {
+    "category": "building",
+    "alt": "halte",
+    "src": "images/gallery/24.jpg"
+  },
+  {
+    "category": "nature",
+    "alt": "Mt. Salak",
+    "src": "images/gallery/25.jpg"
+  },
+  {
+    "category": "thing",
+    "alt": "Milk by Mujigae",
+    "src": "images/gallery/26.jpg"
+  },
+  {
+    "category": "fashion",
+    "alt": "NB Shoes",
+    "src": "images/gallery/27.jpg"
+  },
+  {
+    "category": "city",
+    "alt": "Street of Jakarta",
+    "src": "images/gallery/28.jpg"
+  },
+  {
+    "category": "car",
+    "alt": "Porsche",
+    "src": "images/gallery/29.jpg"
+  },
+  {
+    "category": "place",
+    "alt": "Inside of mall",
+    "src": "images/gallery/30.jpg"
+  },
+  {
+    "category": "transportation",
+    "alt": "MRT of Jakarta",
+    "src": "images/gallery/31.jpg"
+  },
+  {
+    "category": "thing",
+    "alt": "Verites parfume",
+    "src": "images/gallery/32.jpg"
+  },
+  {
+    "category": "place",
+    "alt": "GBK stadium",
+    "src": "images/gallery/33.jpg"
+  },
+  {
+    "category": "city",
+    "alt": "Beauty of building",
+    "src": "images/gallery/34.jpg"
+  },
+  {
+    "category": "city",
+    "alt": "Other side on city",
+    "src": "images/gallery/35.jpg"
+  },
+  {
+    "category": "transportation",
+    "alt": "KRL on Jakarta",
+    "src": "images/gallery/36.jpg"
+  },
+  {
+    "category": "sign",
+    "alt": "Under construction",
+    "src": "images/gallery/37.jpg"
+  },
+  {
+    "category": "transportation",
+    "alt": "LRT on Jakarta",
+    "src": "images/gallery/38.jpg"
+  },
+  {
+    "category": "landscape",
+    "alt": "Beauty of nature",
+    "src": "images/gallery/39.jpg"
+  },
+  {
+    "category": "building",
+    "alt": "Square building",
+    "src": "images/gallery/40.jpg"
+  },
+  {
+    "category": "food",
+    "alt": "Ayam Golek",
+    "src": "images/gallery/41.jpg"
+  },
+  {
+    "category": "place",
+    "alt": "Glagah beach",
+    "src": "images/gallery/42.jpg"
+  },
+  {
+    "category": "thing",
+    "alt": "melons in a market",
+    "src": "images/gallery/43.jpg"
+  },
+  {
+    "category": "sign",
+    "alt": "Zebra cross",
+    "src": "images/gallery/44.jpg"
+  },
+  {
+    "category": "thing",
+    "alt": "Gorgeus sunflower",
+    "src": "images/gallery/45.jpg"
+  },
+  {
+    "category": "place",
+    "alt": "Lawang sewu",
+    "src": "images/gallery/46.jpg"
+  },
+  {
+    "category": "nature",
+    "alt": "beauty nature and trees",
+    "src": "images/gallery/47.jpg"
+  },
+  {
+    "category": "place",
+    "alt": "Mosque on Central Java",
+    "src": "images/gallery/48.jpg"
+  },
+  {
+    "category": "place",
+    "alt": "Stn. Tugu Yogyakarta",
+    "src": "images/gallery/49.jpg"
+  },
+  {
+    "category": "place",
+    "alt": "Bimo Kunting",
+    "src": "images/gallery/50.jpg"
+  }
+]
