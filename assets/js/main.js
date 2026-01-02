@@ -350,7 +350,7 @@ function showLayer(targetId) {
 			$main.hide();
 			$footer.show();
 			$newbut.show();
-			$backtup.hide();
+			// $backtup.hide();
 			$header.show();
 			$body.removeClass('is-article-visible');
 			locked = false;
@@ -369,7 +369,7 @@ function showLayer(targetId) {
 			$main.hide();
 			$footer.show();
 			$newbut.show();
-			$backtup.hide();
+			// $backtup.hide();
 
 			$header.show();
 			setTimeout(function () {
@@ -459,7 +459,7 @@ function showLayer(targetId) {
 
 	$main.hide();
 	$main_articles.hide();
-	$backtup.hide();
+	// $backtup.hide();
 
 	if (location.hash != ''
 		&& location.hash != '#')
