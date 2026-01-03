@@ -449,7 +449,7 @@ body {
     padding: 0em;
     display: flex;
     position: fixed;
-    bottom: 0;
+    bottom: 25px;
     left: 0;
 }
 
