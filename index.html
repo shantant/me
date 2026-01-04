@@ -1,256 +1,497 @@
 <!DOCTYPE HTML>
-<!-- index.html v26.01.02 | @xdarkshan | GPL licensed  -->
+<html>
+<!-- main.html v26.01.02 | @xdarkshan | GPL licensed  -->
 
-<!-- HTML file = index.html v26.01.02 (Major Update) | @xdarkshan | GPL licensed
+<!-- HTML file = main.html v25.12.31 (Major Update) | @xdarkshan | GPL licensed
  Copyright 2021-2023 SHANTAN INDONESIA
  Copyright 2024-2025 SHANTAN INDONESIA
  Licensed under GPL (LICENSE) -->
-
-<html>
 
 <head>
 	<title>𝒉𝒆𝒚𝒚𝒐 . . .</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="shortcut icon" href="images/others/mainicon.png">
+	<link rel="stylesheet" href="assets/css/para.css" />
+	<link rel="stylesheet" href="assets/css/gallery.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
 </head>
 
-<body class="is-preload" style="overflow: hidden;">
-	<div id="wrapper"
-		style="background-image: radial-gradient(farthest-corner, #000000a2, #00000000);padding-bottom: 1rem;">
-		<div id="mobile-notification" class="notification-box-mobile" style="display: none;">
-			<h3>Message</h3>
-			<p>For the best experience, please view this website on a desktop or laptop!</p>
-			<button class="tombol" onclick="hideNotification()" style="align-self: flex-end;">Keep Continue</button>
-		</div>
-		<section class="bg-stars" id="bg-stars" style="margin-top: 0rem;">
-			<span class="star"></span>
-			<span class="star"></span>
-			<span class="star"></span>
-			<span class="star"></span>
-			<span class="star"></span>
-		</section>
-		<div id="notification">
-			<img src="images/property/new.png">
-			<div class="notification-header">
-				<strong>A new post is up!</strong>
-			</div>
-		</div>
-		<div class="welcome-message" id="welcome-message" style="font-weight: bold;text-align: center;"
-			href="letter.html">
-			<span class="text">Hello</span>
-		</div>
-		<div class="instruction" id="instruction">
-			<svg viewBox="0 0 144 141" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path fill-rule="evenodd" clip-rule="evenodd"
-					d="M129.189 0.0490494C128.744 0.119441 126.422 0.377545 124.03 0.635648C114.719 1.6446 109.23 2.4893 108.058 3.09936C107.119 3.56864 106.674 4.34295 106.674 5.44576C106.674 6.71281 107.424 7.51058 109.043 7.97986C110.403 8.37875 110.825 8.42567 118.87 9.52847C121.778 9.92736 124.288 10.3028 124.475 10.3732C124.663 10.4436 122.951 11.1006 120.676 11.8749C110.028 15.4414 100.412 20.7677 91.7339 27.9242C88.38 30.7164 81.6957 37.4271 79.2096 40.5009C73.8387 47.2116 69.6874 54.8139 66.5681 63.7302C65.9348 65.4665 65.3484 66.8978 65.2546 66.8978C65.1374 66.8978 63.7771 66.7336 62.2291 66.5693C52.9649 65.5134 43.1847 68.1649 34.1316 74.2186C24.7735 80.46 18.5349 87.7338 10.5371 101.742C2.53943 115.726 -1.0959 127.482 0.287874 135.014C0.89767 138.463 2.0469 140.035 3.97011 140.082C5.28352 140.105 5.37733 139.659 4.20465 139.049C3.05541 138.463 2.6567 137.9 2.32835 136.281C0.616228 128.021 6.24512 113.028 17.4325 96.1104C23.2725 87.241 28.362 81.9147 35.5622 77.1046C43.8649 71.5437 52.7069 69.033 61.1737 69.8308C64.9967 70.1828 64.6917 69.9247 64.1992 72.4822C62.2525 82.5013 63.8005 92.6378 67.9753 97.354C73.1116 103.079 81.9771 102 85.0027 95.2657C86.3395 92.2858 86.3864 87.7103 85.1434 83.9796C83.1498 78.0901 80.007 73.8197 75.4335 70.8163C73.8152 69.7604 70.4848 68.1883 69.875 68.1883C69.359 68.1883 69.4294 67.6487 70.2268 65.3257C72.3377 59.2486 75.457 52.7021 78.4122 48.244C83.2436 40.9232 91.4524 32.5701 99.1687 27.103C105.806 22.4102 113.241 18.5386 120.512 16.0045C123.772 14.8548 129.87 13.1889 130.081 13.3766C130.128 13.447 129.541 14.362 128.791 15.4414C124.78 21.0258 122.716 26.0706 122.388 30.998C122.224 33.7198 122.341 34.588 122.88 34.2595C122.998 34.1891 123.678 32.969 124.405 31.5611C126.281 27.8069 131.722 20.6738 139.579 11.6402C141.127 9.85697 142.652 7.86254 143.027 7.08823C144.552 4.03792 143.52 1.48035 140.377 0.471397C139.439 0.166366 138.102 0.0490408 134.584 0.0255769C132.074 -0.021351 129.635 0.00212153 129.189 0.0490494ZM137.117 4.92955C137.187 5.0234 136.718 5.63346 136.061 6.29045L134.865 7.48712L131.042 6.73627C128.931 6.33739 126.727 5.9385 126.14 5.8681C124.827 5.68039 124.123 5.32843 124.968 5.28151C125.296 5.28151 126.868 5.11725 128.486 4.953C131.3 4.64797 136.812 4.62451 137.117 4.92955ZM71.5168 72.5292C76.2075 74.899 79.4441 78.8175 81.3204 84.355C83.6189 91.1361 81.2266 96.8378 76.0433 96.8847C73.3227 96.9082 70.9773 95.2188 69.5936 92.2389C68.2802 89.4232 67.6938 86.5606 67.5765 82.1259C67.4593 78.3248 67.6 76.4242 68.2333 72.7403L68.4912 71.2856L69.359 71.5906C69.8515 71.7548 70.8132 72.1772 71.5168 72.5292Z"
-					fill="currentColor"></path>
+<body class="is-preload" style="margin: 0rem;">
+	<div id="wrapper">
+		<header id="header">
+			<!-- kosongin ajah -->
+		</header>
+		<button class="backtup" id="backtup" onclick="scrollToTopSmoothly()">
+			<svg class="svgIcon" viewBox="0 0 384 512">
+				<path
+					d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
+				</path>
 			</svg>
-			<span>Click this!</span>
+		</button>
+		<div class="homepage">
+			<div class="not">
+				<svg style="color: rgb(96 165 250);" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+					viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+					stroke-linejoin="round" class="lucide lucide-sparkles text-blue-400" aria-hidden="true"
+					x-file-name="HomePage" x-line-number="23" x-component="Sparkles" x-id="HomePage_23"
+					x-dynamic="false">
+					<path
+						d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z">
+					</path>
+					<path d="M20 3v4"></path>
+					<path d="M22 5h-4"></path>
+					<path d="M4 17v2"></path>
+					<path d="M5 18H3"></path>
+				</svg>
+				<a style="font-size: 14px;font-family: monospace;letter-spacing: -0.5px;">Available for
+					freelance work</a>
+			</div>
+			<div class="content">
+				<div id="jdlnya" class="inner"
+					style="padding-left: 0rem; padding-right: 0rem ;padding-top: 0rem;padding-bottom: 0rem;margin-bottom: 0rem;pointer-events: none;">
+					<h2 class="parallax__title" style="color: white;">Satria Bagus</h2>
+				</div>
+			</div>
+			<div class="single-line-wrap">
+				<div class="single-line"
+					style="color:white;padding: 3rem 1rem 12rem 1rem;position: relative;font-family: 'PP Neue Montreal';font-size: x-large;text-align: center;transform: translate(0px, 0px);margin-bottom: 3rem;">
+					A driven young
+					innovator who blends
+					the power of programming with a deep understanding of cybersecurity and IoT. My projects
+					demonstrate how I transform concepts into reality, from crafting secure software to building
+					intelligent, interconnected devices.</div>
+			</div>
+			<div class="social-container" style="display: flex;">
+				<div class="socnya"
+					onclick="window.location.href='https://mail.google.com/mail/u/0/?fs=1&to=satriabagusw2018@gmail.com&tf=cm';">
+					<img class="contact-info" src="images/others/gmail.png">
+				</div>
+				<div class="socnya" onclick="window.location.href='https://www.instagram.com/be_svv/';">
+					<img class="contact-info" src="images/others/instagram.png">
+				</div>
+				<div class="socnya" onclick="window.location.href='https://bento.me/bvv';">
+					<img class="contact-info" src="images/others/bento.png">
+				</div>
+				<div class="socnya" onclick="window.location.href='https://t.me/mrzzz_zzz_zzz';">
+					<img class="contact-info" src="images/others/telegram.png">
+				</div>
+
+			</div>
+
 		</div>
-		<div id="main">
+
+		<div id="main"
+			style="justify-self: center; background-color: #00000000; position: relative;top: 0;left: 0;width: 100%;height: 100%;z-index: 1;">
+			<article article id="itsme" class="content-layer" style="gap: 12px;display: flex;flex-direction: column;">
+				<header id="header">
+					<button class="top-right-button" onclick="location.href='#mymusic'">
+						<img src="images/property/music.png">
+					</button>
+					<div class="main-container"
+						style="border-radius: 15px;margin-bottom: 70px;padding-bottom: 2rem;padding-top: 2rem;">
+						<div class="left-side">
+							<header id="header">
+								<div title="𝑪𝒉𝒂𝒔𝒊𝒏𝒈 𝒅𝒓𝒆𝒂𝒎𝒔 𝒐𝒏𝒆 𝒑𝒂𝒈𝒆 𝒂𝒕 𝒂 𝒕𝒊𝒎𝒆"
+									class="maincontentnya" id="maincontentnya"
+									style="padding: 1rem;padding-bottom: 3rem;margin-bottom: 0rem;margin-top: 0rem;">
+									<img class="inipro" src="images/others/propic.png"
+										style="width: 200px; height: 200px;">
+									<div id="jdlnya" class="inner"
+										style="padding-left: 0rem; padding-right: 0rem; padding-top: 1rem; padding-bottom: 0rem; margin-bottom: 0rem; pointer-events: none;font-family: 'Courier New', Courier, monospace;">
+										<h1>Satria Bagus W</h1>
+									</div>
+								</div>
+							</header>
+						</div>
+
+						<div class="right-side">
+							<div class="cardnyaskill">
+								<div class="skills-container" title="First i'll Learn, then remove the 'L'">
+									<div class="skill-group">
+										<div class="skill-header">
+											<a>Front-End</a>
+											<img src="images/skill/frontend.png">
+										</div>
+										<div class="skill-tags">
+											<span class="tag"
+												title="A JavaScript library for building user interfaces.">React</span>
+											<span class="tag"
+												title="A typed superset of JavaScript for better tooling and scalability.">TypeScript</span>
+											<span class="tag"
+												title="A utility-first CSS framework for rapid UI development.">TailwindCSS</span>
+											<span class="tag"
+												title="A JavaScript animation library for high-performance animations.">Gsap</span>
+										</div>
+
+									</div>
+
+									<div class="skill-group">
+										<div class="skill-header">
+											<a>Back-End</a>
+											<img src="images/skill/backend.png">
+										</div>
+										<div class="skill-tags">
+											<span class="tag"
+												title="A runtime environment for building server-side applications with JavaScript.">Node.js</span>
+											<span class="tag"
+												title="A NoSQL database for handling unstructured data.">MongoDB</span>
+											<span class="tag"
+												title="A lightweight Node.js web framework for building web applications.">Nodemon</span>
+											<span class="tag"
+												title="A functional programming language designed for building highly reliable, concurrent, and distributed systems">Erlang</span>
+										</div>
+									</div>
+
+									<div class="skill-group">
+										<div class="skill-header">
+											<a>Design</a>
+											<img src="images/skill/design.png">
+										</div>
+										<div class="skill-tags">
+											<span class="tag"
+												title="An online professional design and publishing tool.">Canva</span>
+											<span class="tag"
+												title="A collaborative design tool for UI/UX prototyping.">Figma</span>
+											<span class="tag"
+												title="An open-source 3D creation suite for modeling and animation.">Blender</span>
+											<span class="tag"
+												title="A canvas mode for creating digital art or illustrations from scratch.">Penup</span>
+										</div>
+									</div>
+
+									<div class="skill-group">
+										<div class="skill-header">
+											<a>Others</a>
+											<img src="images/skill/others.png">
+										</div>
+										<div class="skill-tags">
+											<span class="tag"
+												title="A high-performance programming language.">C++</span>
+											<span class="tag"
+												title="A versatile programming language for back-end development and data analysis.">Python</span>
+											<span class="tag"
+												title="Natural Language Processing for text analysis and understanding.">NLP</span>
+											<span class="tag"
+												title="A graphical programming language used to program Programmable Logic Controllers.">PLC
+												LD</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="gambar-container">
+								<div class="cardnya">
+									<div id="map"></div>
+								</div>
+								<div class="cardnya" style="border-radius: 35px; display: grid;">
+									<img src="images/others/bendera.webp"
+										style="object-fit: contain;height: 300px;padding-top: 1rem;" class="bendera">
+									<div class="footer-bg-layer" style="top: 13.5rem;z-index: 0;"></div>
+									<span class="lang-text"><b>> Spoken Languages</b></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+			</article>
+			<article article id="mygallery" class="content-layer active"
+				style="gap: 12px;display: flex;flex-direction: column;min-height: 95vh;">
+
+				<div class="gallery-controls">
+					<div class="search-box">
+						<input type="text" id="search" placeholder="Search images...">
+						<i class="fas fa-search"></i>
+					</div>
+				</div>
+				<div class="no-results-message" id="noResultsMessage"
+					style="display: none; text-align: center; padding: 2rem;">
+					<img src="images/others/nf.gif" alt="Image not found!"
+						style="max-width: 300px; margin-bottom: 1rem;">
+					<p style="color: #ffffff; font-size: 1.2rem;">Sorry, no images with these keywords were
+						found.</p>
+				</div>
+				<div class="gallery">
+					<div class="gallery-item">
+						<div class="gallery-item-inner">
+							<img>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article article id="mypost_read" class="mypost_read"
+				style="background: rgba(0, 0, 0, 70%);margin: 0px;padding: 2rem 0rem;border-radius: 0px;">
+				<div class="sateulalicence">
+					<p class="sateulalicence__p">
+						<a>Exclusive Content Warning!<br></a>
+						<a>All Photographs on this Website are Original Works by Sateula.<br></a>
+						<a href="#license" class="sateulalicence__p-a">Copyright &copy;2025 Sateula</a>.
+						All rights reserved.
+					</p>
+					</p>
+				</div>
+			</article>
+			<div class="lightbox">
+				<div id="lightbox-background"></div>
+				<div class="lightbox-content">
+					<img src="" alt="Lightbox Image">
+					<div class="bar" style="left: 0.5rem; position:fixed;  width: 180px; cursor: default;">
+						<div class="lightbox-info" style="cursor: default;">
+							<span class="image-caption"
+								style="font-size: medium;user-select: none;-webkit-user-select: none; -moz-user-select: none;-ms-user-select: none;position: absolute;place-self: anchor-center;cursor: default;"></span>
+						</div>
+					</div>
+
+				</div>
+				<button class="lightbox-close">
+					<svg width="40px" height="40px" viewBox="0 -0.5 25 25" fill="none"
+						xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+						<g id="SVGRepo_bgCarrier" stroke-width="0" />
+						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+						<g id="SVGRepo_iconCarrier">
+							<path
+								d="M6.96967 16.4697C6.67678 16.7626 6.67678 17.2374 6.96967 17.5303C7.26256 17.8232 7.73744 17.8232 8.03033 17.5303L6.96967 16.4697ZM13.0303 12.5303C13.3232 12.2374 13.3232 11.7626 13.0303 11.4697C12.7374 11.1768 12.2626 11.1768 11.9697 11.4697L13.0303 12.5303ZM11.9697 11.4697C11.6768 11.7626 11.6768 12.2374 11.9697 12.5303C12.2626 12.8232 12.7374 12.8232 13.0303 12.5303L11.9697 11.4697ZM18.0303 7.53033C18.3232 7.23744 18.3232 6.76256 18.0303 6.46967C17.7374 6.17678 17.2626 6.17678 16.9697 6.46967L18.0303 7.53033ZM13.0303 11.4697C12.7374 11.1768 12.2626 11.1768 11.9697 11.4697C11.6768 11.7626 11.6768 12.2374 11.9697 12.5303L13.0303 11.4697ZM16.9697 17.5303C17.2626 17.8232 17.7374 17.8232 18.0303 17.5303C18.3232 17.2374 18.3232 16.7626 18.0303 16.4697L16.9697 17.5303ZM11.9697 12.5303C12.2626 12.8232 12.7374 12.8232 13.0303 12.5303C13.3232 12.2374 13.3232 11.7626 13.0303 11.4697L11.9697 12.5303ZM8.03033 6.46967C7.73744 6.17678 7.26256 6.17678 6.96967 6.46967C6.67678 6.76256 6.67678 7.23744 6.96967 7.53033L8.03033 6.46967ZM8.03033 17.5303L13.0303 12.5303L11.9697 11.4697L6.96967 16.4697L8.03033 17.5303ZM13.0303 12.5303L18.0303 7.53033L16.9697 6.46967L11.9697 11.4697L13.0303 12.5303ZM11.9697 12.5303L16.9697 17.5303L18.0303 16.4697L13.0303 11.4697L11.9697 12.5303ZM13.0303 11.4697L8.03033 6.46967L6.96967 7.53033L11.9697 12.5303L13.0303 11.4697Z"
+								fill="#ffffff" />
+						</g>
+					</svg> </button>
+				<button class="lightbox-prev">
+					<svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+						stroke="#ffffff">
+						<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+						<g id="SVGRepo_iconCarrier">
+							<path
+								d="M14.2893 5.70708C13.8988 5.31655 13.2657 5.31655 12.8751 5.70708L7.98768 10.5993C7.20729 11.3805 7.2076 12.6463 7.98837 13.427L12.8787 18.3174C13.2693 18.7079 13.9024 18.7079 14.293 18.3174C14.6835 17.9269 14.6835 17.2937 14.293 16.9032L10.1073 12.7175C9.71678 12.327 9.71678 11.6939 10.1073 11.3033L14.2893 7.12129C14.6799 6.73077 14.6799 6.0976 14.2893 5.70708Z"
+								fill="#ffffff"></path>
+						</g>
+					</svg> </button>
+				<button class="lightbox-next">
+					<svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+						stroke="#ffffff">
+						<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+						<g id="SVGRepo_iconCarrier">
+							<path
+								d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+								fill="#ffffff"></path>
+						</g>
+					</svg> </button>
+				<div class="bar">
+					<button class="lightbox-zoom-in">
+						<svg width="25px" height="25px" viewBox="0 0 24 24" fill="none"
+							xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+							</g>
+							<g id="SVGRepo_iconCarrier">
+								<path
+									d="M20 20L14.9497 14.9497M14.9497 14.9497C16.2165 13.683 17 11.933 17 10C17 6.13401 13.866 3 10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17C11.933 17 13.683 16.2165 14.9497 14.9497ZM7 10H13M10 7V13"
+									stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+								</path>
+							</g>
+						</svg> </button>
+					<button class="lightbox-zoom-out">
+						<svg width="25px" height="25px" viewBox="0 0 24 24" fill="none"
+							xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+							</g>
+							<g id="SVGRepo_iconCarrier">
+								<path
+									d="M20 20L14.9497 14.9498M14.9497 14.9498C16.2165 13.683 17 11.933 17 10C17 6.13401 13.866 3 10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17C11.933 17 13.683 16.2165 14.9497 14.9498ZM7 10H13"
+									stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+								</path>
+							</g>
+						</svg> </button>
+					<button class="lightbox-rotate">
+						<svg width="25px" height="25px" viewBox="0 0 24 24" fill="none"
+							xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+							</g>
+							<g id="SVGRepo_iconCarrier">
+								<path
+									d="M17.5689 10.205C17.6829 10.6032 18.0981 10.8336 18.4964 10.7196C18.8946 10.6056 19.125 10.1904 19.011 9.7922L17.5689 10.205ZM16.59 7.0486L17.1301 6.52824L17.1295 6.52764L16.59 7.0486ZM13.111 5.1336L13.2625 4.39907L13.2611 4.39878L13.111 5.1336ZM9.18996 5.5336L8.89453 4.84424L8.89379 4.84456L9.18996 5.5336ZM6.14396 8.1096L5.51365 7.70314L5.51364 7.70315L6.14396 8.1096ZM6.98796 16.9486L7.53029 16.4306L7.52996 16.4302L6.98796 16.9486ZM15.557 17.8196L15.984 18.4362L15.9841 18.4361L15.557 17.8196ZM18.7536 14.9554C18.907 14.5706 18.7195 14.1343 18.3347 13.9809C17.95 13.8275 17.5137 14.0151 17.3603 14.3998L18.7536 14.9554ZM17.5641 9.80996C17.4599 10.2109 17.7004 10.6203 18.1013 10.7245C18.5022 10.8287 18.9117 10.5881 19.0158 10.1872L17.5641 9.80996ZM19.7258 7.45525C19.83 7.05435 19.5895 6.6449 19.1886 6.54072C18.7877 6.43653 18.3783 6.67706 18.2741 7.07796L19.7258 7.45525ZM18.0902 10.7215C18.4894 10.8318 18.9025 10.5976 19.0129 10.1984C19.1232 9.79911 18.889 9.38602 18.4897 9.2757L18.0902 10.7215ZM15.8407 8.5437C15.4415 8.43337 15.0284 8.66759 14.918 9.06684C14.8077 9.46609 15.0419 9.87919 15.4412 9.98951L15.8407 8.5437ZM19.011 9.7922C18.6602 8.56683 18.0144 7.44613 17.1301 6.52824L16.0498 7.56897C16.764 8.31028 17.2856 9.21537 17.5689 10.205L19.011 9.7922ZM17.1295 6.52764C16.0842 5.44503 14.7364 4.70315 13.2625 4.39907L12.9594 5.86813C14.1375 6.11119 15.2148 6.7042 16.0504 7.56956L17.1295 6.52764ZM13.2611 4.39878C11.7942 4.09906 10.2707 4.25448 8.89453 4.84424L9.48538 6.22297C10.5807 5.75356 11.7933 5.62986 12.9608 5.86842L13.2611 4.39878ZM8.89379 4.84456C7.50796 5.44022 6.33115 6.43545 5.51365 7.70314L6.77426 8.51607C7.43013 7.49901 8.37429 6.70054 9.48612 6.22265L8.89379 4.84456ZM5.51364 7.70315C3.52854 10.7816 3.91413 14.8198 6.44595 17.467L7.52996 16.4302C5.47778 14.2845 5.16523 11.0113 6.77427 8.51605L5.51364 7.70315ZM6.44562 17.4666C8.95364 20.0923 12.9989 20.5035 15.984 18.4362L15.13 17.203C12.7516 18.8501 9.52855 18.5225 7.53029 16.4306L6.44562 17.4666ZM15.9841 18.4361C17.2293 17.5732 18.1926 16.3625 18.7536 14.9554L17.3603 14.3998C16.9084 15.5332 16.1326 16.5082 15.1298 17.2032L15.9841 18.4361ZM19.0158 10.1872L19.7258 7.45525L18.2741 7.07796L17.5641 9.80996L19.0158 10.1872ZM18.4897 9.2757L15.8407 8.5437L15.4412 9.98951L18.0902 10.7215L18.4897 9.2757Z"
+									fill="#ffffff"></path>
+							</g>
+						</svg> </button>
+					<button class="lightbox-fullscreen">
+						<svg width="17px" height="17px" viewBox="0 0 24 24" fill="none"
+							xmlns="http://www.w3.org/2000/svg" stroke="#fcfcfc">
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+							</g>
+							<g id="SVGRepo_iconCarrier">
+								<g id="style=stroke">
+									<g id="fullscreen">
+										<path id="vector (Stroke)" fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25H8C8.41421 1.25 8.75 1.58579 8.75 2C8.75 2.41421 8.41421 2.75 8 2.75H4C3.30964 2.75 2.75 3.30964 2.75 4V8C2.75 8.41421 2.41421 8.75 2 8.75C1.58579 8.75 1.25 8.41421 1.25 8V4Z"
+											fill="#ffffff"></path>
+										<path id="vector (Stroke)_2" fill-rule="evenodd" clip-rule="evenodd"
+											d="M20 1.25C21.5188 1.25 22.75 2.48122 22.75 4L22.75 8C22.75 8.41421 22.4142 8.75 22 8.75C21.5858 8.75 21.25 8.41421 21.25 8L21.25 4C21.25 3.30964 20.6904 2.75 20 2.75L16 2.75C15.5858 2.75 15.25 2.41421 15.25 2C15.25 1.58579 15.5858 1.25 16 1.25L20 1.25Z"
+											fill="#ffffff"></path>
+										<path id="vector (Stroke)_3" fill-rule="evenodd" clip-rule="evenodd"
+											d="M22.75 20C22.75 21.5188 21.5188 22.75 20 22.75L16 22.75C15.5858 22.75 15.25 22.4142 15.25 22C15.25 21.5858 15.5858 21.25 16 21.25L20 21.25C20.6904 21.25 21.25 20.6904 21.25 20L21.25 16C21.25 15.5858 21.5858 15.25 22 15.25C22.4142 15.25 22.75 15.5858 22.75 16L22.75 20Z"
+											fill="#ffffff"></path>
+										<path id="vector (Stroke)_4" fill-rule="evenodd" clip-rule="evenodd"
+											d="M1.25 20C1.25 21.5188 2.48122 22.75 4 22.75L8 22.75C8.41421 22.75 8.75 22.4142 8.75 22C8.75 21.5858 8.41421 21.25 8 21.25L4 21.25C3.30964 21.25 2.75 20.6904 2.75 20L2.75 16C2.75 15.5858 2.41421 15.25 2 15.25C1.58579 15.25 1.25 15.5858 1.25 16L1.25 20Z"
+											fill="#ffffff"></path>
+									</g>
+								</g>
+							</g>
+						</svg>
+					</button>
+				</div>
+			</div>
+			<article article id="myjourney" class="content-layer">
+				<button class="top-right-button" onclick="location.href='#mygallery'">
+					<img src="images/property/galleryicon.png">
+				</button>
+				<div class="main-container"
+					style="gap: 3rem; background: #00000000;border-radius: 15px;padding-bottom: 2rem;padding-top: 0rem;padding-right: 0rem;padding-left: 0rem;">
+					<div class="cardjny">
+						<div class="kolomcard" style="display: block;align-self: center;margin-top: 5rem;">
+							<div class="timeline-container">
+								<div class="timeline-item">
+									<div class="timeline-icon">
+										<img src="images/others/whatsapp.png" />
+									</div>
+									<div class="timeline-card">
+										<span class="timeline-year">2024 - 2025</span>
+										<h3 class="timeline-title">Junior Developer</h3>
+										<span class="timeline-company">WhatsApp Inc.</span>
+										<p class="timeline-desc">
+											Joined WhatsApp as a Junior Developer, contributing to backend services and
+											feature development.
+											Collaborated with cross-functional teams to improve messaging reliability
+											and user experience in a high-traffic environment. </p>
+									</div>
+								</div>
+								<div class="timeline-item">
+									<div class="timeline-icon">
+										<img src="images/others/telegram.png" />
+									</div>
+									<div class="timeline-card">
+										<span class="timeline-year">2022 - 2024</span>
+										<h3 class="timeline-title">Telegram Chat Bot</h3>
+										<span class="timeline-company">Personal Project</span>
+										<p class="timeline-desc">
+											Built a custom Telegram bot as a side project using Node.js and
+											MongoDB.
+											Focused on automation, user interaction, and API integration while learning
+											best practices in full-stack development. </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article article id="mymusic" class="content-layer active">
+				<div id="root"
+					style="place-self: center;position: relative;align-self: center;align-content: center;justify-content: center;margin: 100px 0px;">
+				</div>
+			</article>
 			<article article id="license" class="content-layer">
 				<pre id="license-content-container" style="color: white; padding: 20px;"></pre>
 			</article>
-		</div>
-		<footer id="footer">
-			<div class="loader" id="loader">
-				<p><a href="#license">Copyright &copy;2025 Sateula</a>. </p>
-				<div class="words">
-					<span class="word">Made with ❤ love</span>
-					<span class="word">Design by <a href="https://t.me/pathucuz">Pathucuz</a></span>
-					<span class="word">Made with ❤ love</span>
+			<article article id="myposts" class="content-layer">				<div id="mypostsnya_konten-kon"
+					style="margin: 0px 0px;width: 100%;max-width: 900px;;justify-content: center;justify-items: center;">
 				</div>
-			</div>
-		</footer>
+			</article>
+		</div>
+		<div class="glass-bar" id="glass-bar">
+			<p class="glass-bar__p" data-section="" id="home-btn">
+				<img src="images/property/home.png" class="glass-bar__p-img">
+				<span class="judul">Home</span>
+			</p>
+			<p class="glass-bar__p" data-section="itsme" onclick="location.href='#itsme'">
+				<img src="images/property/aboutme.png" class="glass-bar__p-img">
+				<span class="judul">About Me</span>
+			</p>
+			<p class="glass-bar__p" data-section="myjourney" onclick="location.href='#myjourney'">
+				<img src="images/property/journey.png" class="glass-bar__p-img">
+				<span class="judul">Journey</span>
+			</p>
+			<p class="glass-bar__p" data-section="myposts" onclick="location.href='#myposts'">
+				<img src="images/property/post.png" class="glass-bar__p-img">
+				<span class="post-ribbon">
+					<img src="images/property/new.png">
+				</span>
+				<span class="judul">Post</span>
+			</p>
+		</div>
+		<div class="sateulalicence-main" id="sateulalicence-main">
+			<div class="footer-bg-layer"></div>
+			<p class="sateulalicence__p">
+				<a href="#license" class="sateulalicence__p-a">Copyright &copy;2025 Sateula</a>.
+				All rights reserved.
+			</p>
+			</p>
+		</div>
 	</div>
-	<style>
-		@layer instruction {
-			.instruction {
-				position: absolute;
-				left: 50%;
-				top: 50%;
-				font-family: "Gloria Hallelujah", cursive;
-				translate: -140px 20%;
-				color: color-mix(in lch, canvas, canvasText 0%);
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script>
+		const map = L.map('map').setView([-7.795579, 110.369490], 11);
 
-				svg {
-					width: 50px;
-				}
+		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {}).addTo(map);
 
-				span {
-					display: inline-block;
-					translate: -150% 105%;
-					rotate: 10deg;
-					font-size: 0.875rem;
-				}
-			}
-		}
-	</style>
-	<div id="bgk"></div>
+		L.marker([-7.795579, 110.369490], 7).addTo(map)
+			.bindPopup('<b style="color:#ff9800;">Yogyakarta</b> 🏠')
+			.openPopup();
+
+	</script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
 	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/gallery.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/index.js"></script>
 	<script>
-		const messages = [
-			"مرحبا",
-			"Բարեւ",
-			"Salam",
-			"Kaixo",
-			"হ্যালো",
-			"Здравейте",
-			"Hola",
-			"Kumusta",
-			"你好",
-			"Zdravo",
-			"Ahoj",
-			"Hej",
-			"Saluton",
-			"Tere",
-			"Hei",
-			"Bonjour",
-			"Hoi",
-			"Ola",
-			"გამარჯობა",
-			"Hallo",
-			"Γεια σας",
-			"નમસ્તે",
-			"Sannu",
-			"Aloha",
-			"שלום",
-			"Nyob zoo",
-			"Szia",
-			"Nnọọ",
-			"Ciao",
-			"こんにちは",
-			"ನಮಸ್ಕಾರ",
-			"Сәлем",
-			"សួស្តី",
-			"안녕하세요",
-			"Silav",
-			"Салам",
-			"ສະບາຍດີ",
-			"salve",
-			"Sveiki",
-			"Labas",
-			"Moien",
-			"Здраво",
-			"Salama",
-			"Hello",
-			"Kia ora",
-			"हॅलो",
-			"नमस्ते",
-			"Hei",
-			"سلام",
-			"Cześć",
-			"Olá",
-			"Talofa",
-			"Lumela",
-			"Mhoro",
-			"Živjo",
-			"Halo",
-			"Habari",
-			"Салом",
-			"హలో",
-			"สวัสดี",
-			"Merhaba",
-			"Привіт",
-			"ہیلو",
-			"Salom",
-			"Chào bạn",
-			"Helo",
-			"Molo",
-			"העלא",
-			"Bawo ni",
-			"Sawubona"
-		];
-		const welcomeElement = document.getElementById('welcome-message');
-
-		let currentIndex = -2;
-		function animateMessageChange() {
-			welcomeElement.style.opacity = '0';
-			setTimeout(() => {
-				currentIndex = (currentIndex + 1) % messages.length;
-				welcomeElement.textContent = messages[currentIndex];
-				welcomeElement.style.opacity = '1';
-			}, 500);
+		const scrollBtn = document.getElementById("backtup");
+		function scrollToTopSmoothly() {
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth'
+			});
 		}
-		setTimeout(animateMessageChange, 3000);
-		setInterval(animateMessageChange, 3000);
-		welcomeElement.addEventListener('click', function () {
-			window.location.href = "main.html";
-		});
-	</script>
-	<script>
-		function showMobileNotification() {
-			const notification = document.getElementById("mobile-notification");
-			const mainwrap = document.getElementById("welcome-message");
-			const instruction = document.getElementById("instruction");
-			const loader = document.getElementById("loader");
-			const bgstarts = document.getElementById("bg-stars");
-			const mobileBreakpoint = 768;
 
-			if (window.location.hash === "#license") {
-				if (notification) notification.style.display = "none";
+		window.onscroll = function () {
+			const shouldBeVisible = document.body.scrollTop > 600 || document.documentElement.scrollTop > 600;
 
-				if (mainwrap) {
-					mainwrap.classList.remove("blur-content", "disabled-interaction");
-					instruction.classList.remove("blur-content", "disabled-interaction");
-					loader.classList.remove("blur-content", "disabled-interaction");
-					bgstarts.classList.remove("blur-content", "disabled-interaction");
-				}
-				return;
-			}
-
-			if (window.innerWidth <= mobileBreakpoint) {
-				if (notification) {
-					notification.style.display = "inline-grid";
-					mainwrap.classList.add("blur-content");
-					mainwrap.classList.add("disabled-interaction");
-					instruction.classList.add("blur-content");
-					instruction.classList.add("disabled-interaction");
-					loader.classList.add("blur-content");
-					loader.classList.add("disabled-interaction");
-					bgstarts.classList.add("blur-content");
-					bgstarts.classList.add("disabled-interaction");
-				}
+			if (shouldBeVisible) {
+				scrollBtn.classList.add("show");
 			} else {
-				if (notification) {
-					notification.style.display = "none";
-				}
+				scrollBtn.classList.remove("show");
 			}
-		}
+		};
 
-		function hideNotification() {
-			const notification = document.getElementById("mobile-notification");
-			const mainwrap = document.getElementById("welcome-message");
-			const instruction = document.getElementById("instruction");
-			const loader = document.getElementById("loader");
-			const bgstarts = document.getElementById("bg-stars");
+		const navbar = document.getElementById('glass-bar');
+		const shasali = document.getElementById('sateulalicence-main');
 
-			if (notification) {
-				notification.style.display = "none";
-				mainwrap.classList.remove("blur-content");
-				mainwrap.classList.remove("disabled-interaction");
-				instruction.classList.remove("blur-content");
-				instruction.classList.remove("disabled-interaction");
-				loader.classList.remove("blur-content");
-				loader.classList.remove("disabled-interaction");
-				if (bgstarts) {
-					bgstarts.classList.remove("blur-content");
-					bgstarts.classList.remove("disabled-interaction");
-				}
+		let lastScrollY = window.scrollY;
+		const threshold = 5;
+
+		window.addEventListener('scroll', () => {
+			const currentScrollY = window.scrollY;
+			const scrollDistance = Math.abs(currentScrollY - lastScrollY);
+			if (scrollDistance < threshold) return;
+
+			if (currentScrollY > lastScrollY && currentScrollY > 100) {
+				navbar.classList.add('hidden');
+				shasali.classList.add('hidden');
+			} else {
+				navbar.classList.remove('hidden');
+				shasali.classList.remove('hidden');
 			}
-		}
 
-		window.onload = showMobileNotification;
-		window.onresize = showMobileNotification;
-		window.onhashchange = showMobileNotification; 
+			lastScrollY = currentScrollY;
+		}, { passive: true });
 	</script>
 </body>
 
