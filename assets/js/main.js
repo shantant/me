@@ -351,7 +351,7 @@ function showLayer(targetId) {
 			$footer.show();
 			$newbut.show();
 			// $backtup.hide();
-			$header.show();
+			// $header.show();
 			$body.removeClass('is-article-visible');
 			locked = false;
 			$body.removeClass('is-switching');

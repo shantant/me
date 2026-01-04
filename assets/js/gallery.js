@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     async function initGallery() {
         try {
-            const username = "shantant";
+            const username = "01satria";
             const repo = "me";
             const path = "images/gallery";
 

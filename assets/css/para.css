@@ -1805,47 +1805,6 @@ body {
     justify-content: space-between;
 }
 
-.boxes {
-    --sz-img: 46px;
-    top: 2rem;
-    left: 1rem;
-    width: 100%;
-    margin-bottom: 1rem;
-    position: fixed;
-    z-index: 9;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-}
-
-.boxes .caption {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: calc(var(--w-cardjny) - calc(var(--p-cardjny) * 2) - calc(var(--sz-action) * var(--index-action)) - calc(var(--gap-action) * var(--index-action)) - var(--sz-img) - 16px);
-    margin-top: 18px;
-}
-
-.boxes .name {
-    font-size: 30px;
-    font-weight: 600;
-    text-align: left;
-    padding-left: 10px;
-    margin-bottom: 1rem;
-}
-
-.boxes .name,
-.boxes .as {
-    padding-right: 1rem;
-    padding-bottom: 0.5rem;
-    overflow: hidden;
-    width: fit-content;
-    text-shadow: 4px 4px 10px #000000;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
 .box-body {
     --sz-img: 32px;
     gap: 16px;
